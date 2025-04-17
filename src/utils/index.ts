@@ -12,9 +12,9 @@ export function getParams() {
 }
 
 export function getParamValue(name: string) {
-  const args = getParams();
+  let args = getParams();
   if (!args || typeof args !== "object" || Object.keys(args).length === 0) {
-    return "";
+    args = {};
   }
 
   const value =
@@ -30,9 +30,9 @@ export function getParamValue(name: string) {
 }
 
 export function getAuthValue(request: Request, name: string) {
-  const auth: any = request.params?._meta?.auth;
+  let auth: any = request.params?._meta?.auth;
   if (!auth || typeof auth !== "object" || Object.keys(auth).length === 0) {
-    return "";
+    auth = {};
   }
 
   const value =

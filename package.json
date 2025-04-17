@@ -1,6 +1,6 @@
 {
   "name": "@chatmcp/sdk",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Typescript Implementation of Model Context Protocols",
   "author": "ChatMCP",
   "homepage": "https://mcp.so",
